@@ -8,13 +8,14 @@ void menuGerenteDeTienda(){
     do {
     	system("cls");
         cout << "+--------------------------------+\n";
-        cout << "|			caja Registradora	  |\n";
+        cout << "|		Menu Gerente de Tienda	  |\n";
         cout << "+--------------------------------+\n";
-        cout << " [1] Comprar Producto			  |\n";
-        cout << " [2] Agregar Producto		  	  |\n";
-        cout << " [3] Eliminar Producto           |\n";
-        cout << " [4] Agregar Promociones         |\n";
-        cout << " [5] Salir                       |\n";
+        cout << "| [1] Comprar Producto			  |\n";
+        cout << "| [2] Agregar Producto		  	  |\n";
+        cout << "| [3] Eliminar Producto          |\n";
+        cout << "| [4] Agregar Promociones        |\n";
+        cout << "| [5] Salir                      |\n";
+        cout << "+--------------------------------+\n";
         cout << " Opcion: ";cin >> opcion;
      
         switch (opcion) {
