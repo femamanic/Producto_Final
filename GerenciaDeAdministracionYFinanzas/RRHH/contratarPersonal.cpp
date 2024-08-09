@@ -12,6 +12,7 @@ void contratarPersonal(){
         numeroEmpleados=numeroEmpleados+1;
         cin.ignore( );
         cout<<"Ingrese el Nombre y Apellido: ";getline(cin,empleado[numeroEmpleados].nombre);
+        cout<<"ingrese el DNI: ";cin>>empleado[numeroEmpleados].DNI;
         cout<<"ingrese el codigo: ";cin>>empleado[numeroEmpleados].codigo;
         cout<<"ingrese la contraseña: ";cin>>empleado[numeroEmpleados].contra;
         cout<<"ingrese el correo electronico: ";cin>>empleado[numeroEmpleados].correo;
