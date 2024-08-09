@@ -5,5 +5,9 @@
 using namespace std;
 
 void buscarProducto () {
-
+    string m;
+    cout << "+---------------------------------+\n";
+    cout << "|          Buscar Producto        |\n";
+    cout << "+---------------------------------+\n";
+    
 }
