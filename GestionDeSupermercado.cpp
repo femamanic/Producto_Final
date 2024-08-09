@@ -11,6 +11,7 @@ using namespace std;
 int main () {
     DatabaseEmpleados();
     DatabaseProductos();
+    DatabaseCaja();
     string cod, password;
     bool confirm = false;
     do {
