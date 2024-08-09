@@ -44,11 +44,11 @@ extern int mesAct;
 extern int anioAct;
 
 extern float ventasMensuales[7][4];
-extern float conprasMensuales[7][4];
+extern float comprasMensuales[7][4];
 extern float gastosMensuales[7][4];
 
 extern float ventasAnuales[12][50];
-extern float conprasAnuales[12][50];
+extern float comprasAnuales[12][50];
 extern float gastosAnuales[12][50];
 
 #endif // !VARIABLES_H
