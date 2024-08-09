@@ -14,7 +14,7 @@ int main () {
         cout << "+-------------------------------+\n";
         cout << "|          Registrarse          |\n";
         cout << "+-------------------------------+\n";
-        cout << " Code: "; cin >> cod;
+        cout << " USER: "; cin >> cod;
         cout << " Password: "; cin >> password;
         cout << "+-------------------------------+\n";
         for (int i = 0; i < numeroEmpleados; i++) {
@@ -29,7 +29,7 @@ int main () {
                     menuGerenteDeTienda();
                 } else if (empleado[i].cargo == "Cajero") {
                     menuCajaRegistradora();
-                } else if (empleado[i].cargo == "Recursos Humanos") {
+                } else if (empleado[i].cargo == "RRHH") {
                     menuRRHH();
                 } else if (empleado[i].cargo == "Tesoreria") {
                     menuTesoreria();
