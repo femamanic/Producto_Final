@@ -1,13 +1,14 @@
 #include "GerenciaComercial.h"
-#include<iostream>
+#include <iostream>
 #include <string>
+#include "../variables.h"
 using namespace std;
 
-void EliminarProducto(){
+void eliminarProducto(){
     cout << "+-----------------------------------+" << endl;
     cout << "|         Eliminar Productos        |" << endl;
     cout << "+-----------------------------------+" << endl;
-int codigo;
+    string codigo;
     cout << "Ingrese el codigo del producto que desea eliminar: ";cin >> codigo;
     int index = -1;
     for(int i = 0; i < numeroProductos; i++) {

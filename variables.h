@@ -6,6 +6,7 @@ using namespace std;
 
 struct registro {
     string nombre;
+    string DNI;
     string codigo;
     string contra;
     string correo;
@@ -26,8 +27,9 @@ struct inventario {
     string nombre;
     string marca;
     string codigo;
-    int precio;
-    string cantidad;
+    float precio;
+    float costo;
+    int cantidad;
     int unidadesEnAlmacen;
 };
 
