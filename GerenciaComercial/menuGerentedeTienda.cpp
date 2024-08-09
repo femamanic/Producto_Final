@@ -10,11 +10,12 @@ void menuGerenteDeTienda(){
         cout << "+--------------------------------+\n";
         cout << "|		Menu Gerente de Tienda	  |\n";
         cout << "+--------------------------------+\n";
-        cout << "| [1] Comprar Producto			  |\n";
-        cout << "| [2] Agregar Producto		  	  |\n";
+        cout << "| [1] Comprar Producto           |\n";
+        cout << "| [2] Agregar Producto           |\n";
         cout << "| [3] Eliminar Producto          |\n";
-        cout << "| [4] Agregar Promociones        |\n";
-        cout << "| [5] Salir                      |\n";
+        cout << "| [4] Mostrar Inventario         |\n";
+        cout << "| [5] Modificar Invenratio       |\n";
+        cout << "| [6] Salir                      |\n";
         cout << "+--------------------------------+\n";
         cout << " Opcion: ";cin >> opcion;
      
@@ -29,13 +30,15 @@ void menuGerenteDeTienda(){
             void EliminarProducto();//Eliminar Producto
             break;
         case 4:
-            void AgregarPromociones();//AÃ±adir Descuentos u ofertas
+            void MostrarInventario();//AÃ±adir Descuentos u ofertas
             break;
-        case 5:
+        case 5: 
+            void ModificarProducto();//Hacer modificaciones al producto
+        case 6:
             cout<<"Saliendo..."<<endl;//Salir
             break;
         default:
             cout<<"Opcion Invalida"<<endl;//Opcion no valida
             }
-        } while (opcion != 5);
+        } while (opcion != 6);
 }
