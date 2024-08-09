@@ -2,8 +2,7 @@
 #define ADMINISTRACIONYFINANZAS_H
 
 void menuContabilidad();
-void verReporteDeVentas();
-void verReporteDeCompras();
+void aprobarSueldos();
 
 void menuTesoreria();
 void pagarSueldos();

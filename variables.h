@@ -6,14 +6,17 @@ using namespace std;
 
 struct registro {
     string nombre;
-    string apellido;
+    string DNI;
     string codigo;
-    string contraseña;
+    string contra;
     string correo;
     string telefono;
     int edad;
-    int minutosTarde;
+    float salario;
+    string cargo;
+    int minutosTarde = 0;
     int horasDeTrabajo;
+    bool sueldoAprobado = false;
 };
 
 extern registro empleado[100];
@@ -24,12 +27,30 @@ struct inventario {
     string nombre;
     string marca;
     string codigo;
-    int precio;
-    string cantidad;
+    float precio;
+    float costo;
     int unidadesEnAlmacen;
 };
 
 extern inventario producto[100];
 extern int numeroProductos;
+
+struct compra {
+    string nombre;
+    string codigo;
+    int cantidad;
+    float precio;
+    float total;
+};
+
+extern compra carrito[100];
+extern int numerocarrito;
+extern float totalCarrito;
+
+extern float compraProveedores;
+
+extern float gastosSueldos;
+
+extern float caja;
 
 #endif // !VARIABLES_H

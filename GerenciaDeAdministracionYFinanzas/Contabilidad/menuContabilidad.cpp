@@ -10,17 +10,13 @@ void menuContabilidad() {
         cout << "+-------------------------------+\n";
         cout << "|          Contabilidad         |\n";
         cout << "+-------------------------------+\n";
-        cout << "| [1] Ver reporte de ventas     |\n";
-        cout << "| [2] Ver reporte de compras    |\n";
+        cout << "| [1] Aprobar sueldos           |\n";
         cout << "| [0] Regresar                  |\n";
         cout << "+-------------------------------+\n";
         cout << " Opcion: "; cin >> opcion;
         switch (opcion) {
             case 1:
-                verReporteDeVentas();
-                break;
-            case 2:
-                verReporteDeCompras();
+                aprobarSueldos();
                 break;
             case 0:
                 system ("cls");
