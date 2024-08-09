@@ -64,4 +64,10 @@ extern float ventasAnuales[12][50];
 extern float comprasAnuales[12][50];
 extern float gastosAnuales[12][50];
 
+extern float compraProveedores;
+
+extern float gastosSueldos;
+
+extern float caja;
+
 #endif // !VARIABLES_H

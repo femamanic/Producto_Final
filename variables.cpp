@@ -26,3 +26,7 @@ float gastosMensuales[7][4] = {0};
 float ventasAnuales[12][50] = {0};
 float conprasAnuales[12][50] = {0};
 float gastosAnuales[12][50] = {0};
+
+float compraProveedores = 0;
+float gastoSueldos = 0;
+float caja = 0;
