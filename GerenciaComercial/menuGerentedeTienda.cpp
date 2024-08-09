@@ -15,7 +15,7 @@ void menuGerenteDeTienda(){
         cout << "| [3] Eliminar Producto          |\n";
         cout << "| [4] Mostrar Inventario         |\n";
         cout << "| [5] Modificar Invenratio       |\n";
-        cout << "| [6] Salir                      |\n";
+        cout << "| [0] Salir                      |\n";
         cout << "+--------------------------------+\n";
         cout << " Opcion: ";cin >> opcion;
      
@@ -39,6 +39,7 @@ void menuGerenteDeTienda(){
             break;
         default:
             cout<<"Opcion Invalida"<<endl;//Opcion no valida
-            }
+            break;
+        }
         } while (opcion != 6);
 }
