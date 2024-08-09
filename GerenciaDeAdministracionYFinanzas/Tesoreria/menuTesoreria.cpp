@@ -13,6 +13,7 @@ using namespace std;
         cout << "+--------------------------------+\n";
         cout << "| [1] Pagar Sueldos              |\n";
         cout << "| [2] Pagar Proveedores          |\n";
+        cout << "| [3] Ver Dinero en Caja         |\n";
         cout << "| [0] Salir                      |\n";
         cout << "+--------------------------------+\n";
         cout << " Opcion: "; cin >> opcion;
@@ -23,6 +24,10 @@ using namespace std;
             break;
         case 2:
             pagarProveedores();  // Funcion de pagar Proveedores
+            break;
+        case 3:
+            cout << "Dinero en Caja: S/. " << caja << endl;  // Ver dinero en caja
+            system("pause>nul");
             break;
         case 0:
             cout << "Saliendo..." << endl;  // Salir
