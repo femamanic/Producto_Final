@@ -47,26 +47,7 @@ extern compra carrito[100];
 extern int numerocarrito;
 extern float totalCarrito;
 
-extern string diaActual[7];
-extern string semanaActual[4];
-extern string mesActual[12];
-
-extern int diaAct;
-extern int semanaAct;
-extern int mesAct;
-extern int anioAct;
-
-extern float ventasMensuales[7][4];
-extern float comprasMensuales[7][4];
-extern float gastosMensuales[7][4];
-
-extern float ventasAnuales[12][50];
-extern float comprasAnuales[12][50];
-extern float gastosAnuales[12][50];
-
 extern float compraProveedores;
-extern int numeroComprasProveedores[50];
-extern int numeroCompras;
 
 extern float gastosSueldos;
 

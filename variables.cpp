@@ -14,21 +14,6 @@ string diaActual[7] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sab
 string semanaActual[4] = {"Semana1", "Semana2", "Semana3", "Semana4"};
 string mesActual[12] = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
 
-int diaAct = 0;
-int semanaAct = 0;
-int mesAct = 0;
-int anioAct = 0;
-
-float ventasMensuales[7][4] = {0};
-float conprasMensuales[7][4] = {0};
-float gastosMensuales[7][4] = {0};
-
-float ventasAnuales[12][50] = {0};
-float conprasAnuales[12][50] = {0};
-float gastosAnuales[12][50] = {0};
-
 float compraProveedores = 0;
-int numeroComprasProveedores[50];
-int numeroCompras = 0;
 float gastoSueldos = 0;
 float caja = 0;
