@@ -8,7 +8,7 @@ void menuGerenteDeTienda(){
     do {
     	system("cls");
         cout << "+--------------------------------+\n";
-        cout << "|		Menu Gerente de Tienda	  |\n";
+        cout << "|		Menu Gerente de Tienda    |\n";
         cout << "+--------------------------------+\n";
         cout << "| [1] Comprar Producto           |\n";
         cout << "| [2] Agregar Producto           |\n";
