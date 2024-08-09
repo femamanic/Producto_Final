@@ -20,7 +20,7 @@ void menuRRHH(){
                 contratarPersonal();
                 break;
             case 2:
-                contratarPersonal();
+                despedirPersonal();
                 break;
             case 3:
                 verRegistroDePersonal();
