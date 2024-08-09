@@ -41,3 +41,4 @@ void menuCajaRegistradora() {
                 break;
         }
     } while (opcion != 0);
+}
