@@ -1,8 +1,10 @@
 #include "GerenciaComercial.h"
-#include<iostream>
+#include <iostream>
+#include <string>
+#include "../variables.h"
 using namespace std;
 
-void MostrarInventario() {
+void mostrarRegistroDeInventario() {
     cout << "+-----------------------------------+" << endl;
     cout << "|         Registro de Inventario    |" << endl;
     cout << "+-----------------------------------+" << endl;
@@ -12,7 +14,6 @@ void MostrarInventario() {
         cout << "Nombre: " << producto[i].nombre << endl;
         cout << "Categoria: " << producto[i].categoria << endl;
         cout << "Marca: " << producto[i].marca << endl;
-        cout << "Tipo: " << producto[i].tipo << endl;
         cout << "Cantidad: " << producto[i].cantidad << endl;
         cout << "Precio: " << producto[i].precio << endl;
         cout << "Costo: " << producto[i].costo << endl;

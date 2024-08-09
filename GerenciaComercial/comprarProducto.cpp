@@ -1,20 +1,22 @@
 #include "GerenciaComercial.h"
-#include<iostream>
+#include <iostream>
 #include <string>
+#include "../variables.h"
 using namespace std;
 
-void ComprarProducto() {
+void comprarProducto() {
     cout << "+-----------------------------------+" << endl;
     cout << "|         Comprar Productos         |" << endl;
     cout << "+-----------------------------------+" << endl;
-    int codigo, cantidad;
-    cout << "Ingrese el codigo del producto que desea comprar: ";cin >> codigo;
-    cout << "Ingrese la cantidad que desea comprar: ";cin >> cantidad;
+    string cod;
+    int cant;
+    cout << "Ingrese el codigo del producto que desea comprar: ";cin >> cod;
+    cout << "Ingrese la cantidad que desea comprar: ";cin >> cant;
 
     for (int i = 0; i < numeroProductos; i++) {
-        if (producto[i].codigo == codigo) {
-            if (producto[i].cantidad >= cantidad) {
-                producto[i].cantidad -= cantidad;
+        if (producto[i].codigo == cod) {
+            if (producto[i].cantidad >= cant) {
+                producto[i].cantidad -= cant;
                 cout << "Compra realizada con exito."<<endl;
                 return;
             } else {

@@ -1,10 +1,11 @@
 #include "GerenciaComercial.h"
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
+#include "../variables.h"
 using namespace std;
 
-void ModificarProducto() {
-    int codigo;
+void modificarProducto() {
+    string codigo;
     cout << "Ingrese el codigo del producto que desea modificar: "; cin >> codigo;
 
     int index = -1;
@@ -28,12 +29,11 @@ void ModificarProducto() {
         cout << "| [1] Nombre                     |" << endl;
         cout << "| [2] Categoria                  |" << endl;
         cout << "| [3] Marca                      |" << endl;
-        cout << "| [4] Tipo                       |" << endl;
-        cout << "| [5] Cantidad                   |" << endl;
-        cout << "| [6] Precio                     |" << endl;
-        cout << "| [7] Costo                      |" << endl;
-        cout << "| [8] Unidades                   |" << endl;
-        cout << "| [9] Salir                      |" << endl;
+        cout << "| [4] Cantidad                   |" << endl;
+        cout << "| [5] Precio                     |" << endl;
+        cout << "| [6] Costo                      |" << endl;
+        cout << "| [7] Unidades                   |" << endl;
+        cout << "| [0] Salir                      |" << endl;
         cout << "+--------------------------------+" << endl;
         cout << " Opcion: "; cin >> opcion;
 
@@ -53,32 +53,28 @@ void ModificarProducto() {
                 getline(cin, producto[index].marca);
                 break;
             case 4:
-                cout << "Ingrese el nuevo tipo de producto: ";
-                cin >> producto[index].tipo;
-                break;
-            case 5:
                 cout << "Ingrese la nueva cantidad del producto: ";
                 cin >> producto[index].cantidad;
                 break;
-            case 6:
+            case 5:
                 cout << "Ingrese el nuevo precio del producto: ";
                 cin >> producto[index].precio;
                 break;
-            case 7:
+            case 6:
                 cout << "Ingrese el nuevo costo del producto: ";
                 cin >> producto[index].costo;
                 break;
-            case 8:
+            case 7:
                 cout << "Ingrese las nuevas unidades del producto: ";
                 cin >> producto[index].unidadesEnAlmacen;
                 break;
-            case 9:
+            case 0:
                 cout << "Saliendo de la modificación..." << endl;
                 break;
             default:
                 cout << "Opcion Invalida" << endl;
         }
-    } while (opcion != 9);
+    } while (opcion != 0);
 
     cout << "Producto modificado con éxito." << endl;
 }
