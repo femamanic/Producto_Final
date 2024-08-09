@@ -9,7 +9,7 @@ void pagarProveedores() {
     cout << "|         Pagar Proveedores      |\n";
     cout << "+--------------------------------+\n";
     for (int i = 0; i < numeroProductos; i++) {
-        cout << "Pagando por: " << producto[i].nombre << " - s/" << producto[i].precio * producto[i].cantidad << endl;
+        cout << "Pagando por: " << producto[i].nombre << " - s/" << producto[i].precio * producto[i].unidadesEnAlmacen << endl;
     }
     cout << "Todos los pagos a proveedores han sido procesados." << endl;
 }
