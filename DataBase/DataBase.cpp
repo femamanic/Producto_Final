@@ -88,3 +88,7 @@ void DatabaseProductos () {
     producto[49] = {"Bebidas", "Vino tinto", "Marques de Riscal", "VT001", 25.00, 18.00, 15};
     numeroProductos = 50;
 }
+
+void DatabaseCaja() {
+    caja = 150000.00;
+}
