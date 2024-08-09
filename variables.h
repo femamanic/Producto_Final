@@ -36,6 +36,18 @@ struct inventario {
 extern inventario producto[100];
 extern int numeroProductos;
 
+struct compra {
+    string nombre;
+    string codigo;
+    int cantidad;
+    float precio;
+    float total;
+};
+
+extern compra carrito[100];
+extern int numerocarrito;
+extern float totalCarrito;
+
 extern string diaActual[7];
 extern string semanaActual[4];
 extern string mesActual[12];
