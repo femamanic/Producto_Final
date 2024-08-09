@@ -3,5 +3,6 @@
 
 void DatabaseEmpleados();
 void DatabaseProductos();
+void DatabaseCaja();
 
 #endif // !DATABASE_H

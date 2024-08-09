@@ -41,5 +41,5 @@ void menuGerenteDeTienda(){
             cout<<"Opcion Invalida"<<endl;//Opcion no valida
             break;
         }
-        } while (opcion != 6);
+        } while (opcion != 0);
 }

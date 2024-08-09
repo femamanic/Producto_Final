@@ -26,6 +26,8 @@ void comprarProducto() {
             cout << " Unidades en almacen: " << producto[i].unidadesEnAlmacen << endl;
             cout << "+------------------------------------------------------+" << endl;
             cout << " Producto adquirido con exito."<<endl;
+            compraProveedores = compraProveedores + (producto[i].costo * cant);
+            break;
         }
     }
     if (!encontrado) {

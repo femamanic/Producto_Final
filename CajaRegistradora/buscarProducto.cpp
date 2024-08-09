@@ -25,11 +25,11 @@ void buscarProducto () {
             cout<<"+----------------------------------------------+"<<endl;
             cout<<"|         BUSCAR PRODUCTO POR NOMBRE           |"<<endl;
             cout<<"+----------------------------------------------+"<<endl;
+            cin.ignore( );
             cout<<" Ingrese el nombre del producto a buscar: \n ";getline(cin, m);
             cout<<"+----------------------------------------------+"<<endl;
             for(int i=0;i<numeroProductos;i++){
                 if(producto[i].nombre==m){
-                    cin.ignore( );
                     cout<<" Nombre: "<<producto[i].nombre<<endl;
                     cout<<" Categoria: "<<producto[i].categoria<<endl;
                     cout<<" Marca: "<<producto[i].marca<<endl;
@@ -50,11 +50,11 @@ void buscarProducto () {
             cout<<"+----------------------------------------------+"<<endl;
             cout<<"|         BUSCAR PRODUCTO POR CATEGORIA        |"<<endl;
             cout<<"+----------------------------------------------+"<<endl;
+            cin.ignore( );
             cout<<" Ingrese la categoria del producto: \n ";getline(cin, m);
             cout<<"+----------------------------------------------+"<<endl;
             for(int i=0;i<numeroProductos;i++){
                 if(producto[i].categoria==m){
-                    cin.ignore( );
                     cout<<" Nombre: "<<producto[i].nombre<<endl;
                     cout<<" Marca: "<<producto[i].marca<<endl;
                     cout<<" Precio: S/. "<<producto[i].precio<<endl;
@@ -74,11 +74,11 @@ void buscarProducto () {
             cout<<"+----------------------------------------------+"<<endl;
             cout<<"|         BUSCAR PRODUCTO POR MARCA            |"<<endl;
             cout<<"+----------------------------------------------+"<<endl;
+            cin.ignore( );
             cout<<" Ingrese la marca del producto: \n ";getline(cin,m);
             cout<<"+----------------------------------------------+"<<endl;
             for(int i=0;i<numeroProductos;i++){
                 if(producto[i].marca==m){
-                    cin.ignore( );
                     cout<<" Nombre: "<<producto[i].nombre<<endl;
                     cout<<" Categoria: "<<producto[i].categoria<<endl;
                     cout<<" Precio: S/. "<<producto[i].precio<<endl;
@@ -105,7 +105,7 @@ void buscarProducto () {
                     cout<<" Nombre: "<<producto[i].nombre<<endl;
                     cout<<" Categoria: "<<producto[i].categoria<<endl;
                     cout<<" Marca: "<<producto[i].marca<<endl;
-                    cout<<" Precio: S/. "<<producto[i].precio<<endl;
+                    cout<<" Precio: "<<producto[i].precio<<endl;
                     cout<<"+----------------------------------------------+"<<endl;
                     if(producto[i].unidadesEnAlmacen<=0){
                         cout<<" El producto que acaba de buscar se vendio todo."<<endl;

@@ -9,12 +9,13 @@ void pagarSueldos() {
     cout << "|         Pagar Sueldos          |\n";
     cout << "+--------------------------------+\n";
     for (int i = 0; i < numeroEmpleados; i++) {
-        if (!empleado[i].sueldoAprobado) {
-            cout << "Pagando a: " << empleado[i].nombre << " - s/" << empleado[i].salario << endl;
-            empleado[i].sueldoAprobado = true;
-        } else {
-            cout << "El empleado " << empleado[i].nombre << " ya ha sido pagado." << endl;
+        if (empleado[i].sueldoAprobado == true) {
+            cout << " Pagando a " << empleado[i].nombre << "\n S/. " << empleado[i].salario << endl;
+            caja = caja - empleado[i].salario;
+            cout << "+--------------------------------+\n";
         }
     }
+    cout << " Dinero de la Caja: S/. " << caja << endl;
     cout << "Todos los sueldos han sido pagados." << endl;
+    system("pause>nul");
 }

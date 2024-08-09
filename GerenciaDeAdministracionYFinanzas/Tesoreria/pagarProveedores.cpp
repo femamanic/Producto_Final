@@ -5,11 +5,13 @@
 using namespace std;
 
 void pagarProveedores() {
+    system ("cls");
     cout << "+--------------------------------+\n";
     cout << "|         Pagar Proveedores      |\n";
     cout << "+--------------------------------+\n";
-    for (int i = 0; i < numeroProductos; i++) {
-        cout << "Pagando por: " << producto[i].nombre << " - s/" << producto[i].precio * producto[i].unidadesEnAlmacen << endl;
-    }
-    cout << "Todos los pagos a proveedores han sido procesados." << endl;
+    cout << " Pagando a proveedores \n S/. " << compraProveedores << endl;
+    cout << " Todos los pagos a proveedores han sido procesados." << endl;
+    caja = caja - compraProveedores;
+    cout << " Dinero de la Caja: S/. " << caja << endl;
+    system("pause>nul");
 }
