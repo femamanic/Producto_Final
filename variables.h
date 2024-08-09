@@ -12,7 +12,7 @@ struct registro {
     string telefono;
     int edad;
     float salario;
-    string areaDeTrabajo;
+    string cargo;
     int minutosTarde = 0;
     int horasDeTrabajo;
     bool sueldoAprobado = false;
