@@ -4,23 +4,29 @@
 #include "./GerenciaComercial/GerenciaComercial.h"
 #include "./CajaRegistradora/CajaRegistradora.h"
 #include "variables.h"
+#include "./DataBase/DataBase.h"
 
 using namespace std;
 
 int main () {
+    DatabaseEmpleados();
+    DatabaseProductos();
     string cod, password;
+    bool confirm = false;
     do {
         system ("cls");
         cout << "+-------------------------------+\n";
         cout << "|          Registrarse          |\n";
         cout << "+-------------------------------+\n";
         cout << " USER: "; cin >> cod;
-        cout << " Password: "; cin >> password;
+        cout << " PASSWORD: "; cin >> password;
         cout << "+-------------------------------+\n";
         for (int i = 0; i < numeroEmpleados; i++) {
-            if (empleado[i].codigo == cod && empleado[i].codigo == password) {
-                cout << " Bienvenido . . .\n" << empleado[i].nombre << "\n";
+            if (empleado[i].codigo == cod && empleado[i].contra == password) {
+                system ("cls");
+                cout << " Bienvenido . . .\n " << empleado[i].nombre << "\n";
                 system ("pause>nul");
+                confirm = true;
                 if (empleado[i].cargo == "Gerente General") {
                     menuGerenciaGeneral();
                 } else if (empleado[i].cargo == "Contador") {
@@ -34,12 +40,13 @@ int main () {
                 } else if (empleado[i].cargo == "Tesoreria") {
                     menuTesoreria();
                 }
-            }
-            else {
-                cout << " Code o password incorrecto\n";
-                system ("pause>nul");
+                break; 
             }
         }
+            if (!confirm) {
+                cout << " User o password incorrecto . . .\n";
+                system ("pause>nul");
+            }
     } while (cod != "exit" && password != "confirm");
     return 0;
 }
