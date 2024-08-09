@@ -6,7 +6,7 @@ using namespace std;
 
 void agregarProductoAlCarrito() {
     string prod;
-    int opcion;
+    int opcion, cant;
     do {
         system ("cls");
         cout << "+---------------------------------+\n";
@@ -21,10 +21,15 @@ void agregarProductoAlCarrito() {
             case 1:
                 system ("cls");
                 cout << "Nombre del producto: "; cin >> prod;
+                cout << "Cantidad: "; cin >> cant;
                 for (int i = 0; i < numeroProductos; i++) {
                     if (producto[i].nombre == prod) {
-                        ventasMensuales[diaAct][semanaAct] += producto[i].precio;
-                        ventasAnuales[mesAct][anioAct] += producto[i].precio;
+                        carrito[numerocarrito].nombre = producto[i].nombre;
+                        carrito[numerocarrito].codigo = producto[i].codigo;
+                        carrito[numerocarrito].precio = producto[i].precio;
+                        carrito[numerocarrito].cantidad = cant;
+                        carrito[numerocarrito].total = producto[i].precio * cant;
+                        numerocarrito++;
                         cout << "Agregando " << prod << " al carrito...\n";
                         break;
                     }
@@ -32,6 +37,19 @@ void agregarProductoAlCarrito() {
                 system ("pause>nul");
             case 2:
                 cout << "Codigo del producto: "; cin >> prod;
+                cout << "Cantidad: "; cin >> cant;
+                for (int i = 0; i < numeroProductos; i++) {
+                    if (producto[i].codigo == prod) {
+                        carrito[numerocarrito].nombre = producto[i].nombre;
+                        carrito[numerocarrito].codigo = producto[i].codigo;
+                        carrito[numerocarrito].precio = producto[i].precio;
+                        carrito[numerocarrito].cantidad = cant;
+                        carrito[numerocarrito].total = producto[i].precio * cant;
+                        numerocarrito++;
+                        cout << "Agregando " << prod << " al carrito...\n";
+                        break;
+                    }
+                }
                 cout << "Agregando producto con codigo " << prod << " al carrito...\n";
                 system ("pause>nul");
                 break;
