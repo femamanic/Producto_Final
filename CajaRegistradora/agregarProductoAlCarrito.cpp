@@ -21,13 +21,14 @@ void agregarProductoAlCarrito() {
         switch (opcion) {
             case 1:
                 system ("cls");
-                cout << "Nombre del producto: "; cin >> prod;
+                cin.ignore();
+                cout << "Nombre del producto: "; getline(cin, prod);
                 cout << "Cantidad: "; cin >> cant;
                 encontrado = false;
                 for (int i = 0; i < numeroProductos; i++) {
                     if (producto[i].nombre == prod) {
                         encontrado = true;
-                        if (producto[i].cantidad < cant) {
+                        if (producto[i].unidadesEnAlmacen < cant) {
                             cout << "No hay suficiente stock de " << prod << " en el almacen.\n";
                             system ("pause>nul");
                             break;
@@ -48,13 +49,14 @@ void agregarProductoAlCarrito() {
                 system ("pause>nul");
                 break;
             case 2:
+                system ("cls");
                 cout << "Codigo del producto: "; cin >> prod;
                 cout << "Cantidad: "; cin >> cant;
                 encontrado = false;
                 for (int i = 0; i < numeroProductos; i++) {
                     if (producto[i].codigo == prod) {
                         encontrado = true;
-                        if (producto[i].cantidad < cant) {
+                        if (producto[i].unidadesEnAlmacen < cant) {
                             cout << "No hay suficiente stock de " << prod << " en el almacen.\n";
                             system ("pause>nul");
                             break;
