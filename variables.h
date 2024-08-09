@@ -13,9 +13,9 @@ struct registro {
     int edad;
     float salario;
     string areaDeTrabajo;
-    int minutosTarde;
+    int minutosTarde = 0;
     int horasDeTrabajo;
-    bool sueldoAprobado;
+    bool sueldoAprobado = false;
 };
 
 extern registro empleado[100];
@@ -34,12 +34,21 @@ struct inventario {
 extern inventario producto[100];
 extern int numeroProductos;
 
+extern string diaActual[7];
+extern string semanaActual[4];
+extern string mesActual[12];
+
+extern int diaAct;
+extern int semanaAct;
+extern int mesAct;
+extern int anioAct;
+
 extern float ventasMensuales[7][4];
 extern float conprasMensuales[7][4];
 extern float gastosMensuales[7][4];
 
-extern float ventasAnuales[12];
-extern float conprasAnuales[12];
-extern float gastosAnuales[12];
+extern float ventasAnuales[12][50];
+extern float conprasAnuales[12][50];
+extern float gastosAnuales[12][50];
 
 #endif // !VARIABLES_H
