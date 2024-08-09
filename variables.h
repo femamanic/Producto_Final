@@ -6,14 +6,16 @@ using namespace std;
 
 struct registro {
     string nombre;
-    string apellido;
     string codigo;
-    string contraseña;
+    string contra;
     string correo;
     string telefono;
     int edad;
+    float salario;
+    string areaDeTrabajo;
     int minutosTarde;
     int horasDeTrabajo;
+    bool sueldoAprobado;
 };
 
 extern registro empleado[100];
@@ -31,5 +33,13 @@ struct inventario {
 
 extern inventario producto[100];
 extern int numeroProductos;
+
+extern float ventasMensuales[7][4];
+extern float conprasMensuales[7][4];
+extern float gastosMensuales[7][4];
+
+extern float ventasAnuales[12];
+extern float conprasAnuales[12];
+extern float gastosAnuales[12];
 
 #endif // !VARIABLES_H
