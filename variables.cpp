@@ -28,5 +28,6 @@ float conprasAnuales[12][50] = {0};
 float gastosAnuales[12][50] = {0};
 
 float compraProveedores = 0;
+int numeroComprasProveedores[50] = {0};
 float gastoSueldos = 0;
 float caja = 0;
