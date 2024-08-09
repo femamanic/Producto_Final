@@ -6,6 +6,7 @@ using namespace std;
 
 void agregarProductoAlCarrito() {
     string prod;
+    bool encontrado;
     int opcion, cant;
     do {
         system ("cls");
@@ -22,8 +23,15 @@ void agregarProductoAlCarrito() {
                 system ("cls");
                 cout << "Nombre del producto: "; cin >> prod;
                 cout << "Cantidad: "; cin >> cant;
+                encontrado = false;
                 for (int i = 0; i < numeroProductos; i++) {
                     if (producto[i].nombre == prod) {
+                        encontrado = true;
+                        if (producto[i].cantidad < cant) {
+                            cout << "No hay suficiente stock de " << prod << " en el almacen.\n";
+                            system ("pause>nul");
+                            break;
+                        }
                         carrito[numerocarrito].nombre = producto[i].nombre;
                         carrito[numerocarrito].codigo = producto[i].codigo;
                         carrito[numerocarrito].precio = producto[i].precio;
@@ -34,12 +42,23 @@ void agregarProductoAlCarrito() {
                         break;
                     }
                 }
+                if (!encontrado) {
+                    cout << "Producto no encontrado.\n";
+                }
                 system ("pause>nul");
+                break;
             case 2:
                 cout << "Codigo del producto: "; cin >> prod;
                 cout << "Cantidad: "; cin >> cant;
+                encontrado = false;
                 for (int i = 0; i < numeroProductos; i++) {
                     if (producto[i].codigo == prod) {
+                        encontrado = true;
+                        if (producto[i].cantidad < cant) {
+                            cout << "No hay suficiente stock de " << prod << " en el almacen.\n";
+                            system ("pause>nul");
+                            break;
+                        }
                         carrito[numerocarrito].nombre = producto[i].nombre;
                         carrito[numerocarrito].codigo = producto[i].codigo;
                         carrito[numerocarrito].precio = producto[i].precio;
@@ -50,7 +69,9 @@ void agregarProductoAlCarrito() {
                         break;
                     }
                 }
-                cout << "Agregando producto con codigo " << prod << " al carrito...\n";
+                if (!encontrado) {
+                    cout << "Producto no encontrado.\n";
+                }
                 system ("pause>nul");
                 break;
             case 0:
