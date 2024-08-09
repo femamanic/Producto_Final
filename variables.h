@@ -66,6 +66,7 @@ extern float gastosAnuales[12][50];
 
 extern float compraProveedores;
 extern int numeroComprasProveedores[50];
+extern int numeroCompras;
 
 extern float gastosSueldos;
 
