@@ -7,7 +7,7 @@ void menuRRHH(){
     do {
         system ("cls");
         cout << "+---------------------------------+\n";
-        cout << "|        Caja Registradora        |\n";
+        cout << "|    Recursos Humanos (RRHH)      |\n";
         cout << "+---------------------------------+\n";
         cout << "| [1] contratarPersonal           |\n";
         cout << "| [2] despedirPersonal            |\n";

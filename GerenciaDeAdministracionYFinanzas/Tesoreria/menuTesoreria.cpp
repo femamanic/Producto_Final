@@ -35,5 +35,5 @@ using namespace std;
         default:
             cout << "Opcion Invalida" << endl;  // Opción no válida
         }
-    } while (opcion != 3);
+    } while (opcion != 0);
 }

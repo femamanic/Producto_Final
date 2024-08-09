@@ -29,6 +29,7 @@ void imprimirRecibo () {
         switch (opcion) {
             case 1:
                 cout << " Pagando..." << endl;
+                caja = caja + TotalTotal;
                 numerocarrito = 0;
                 system ("pause>nul");
                 break;
