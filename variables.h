@@ -29,7 +29,6 @@ struct inventario {
     string codigo;
     float precio;
     float costo;
-    int cantidad;
     int unidadesEnAlmacen;
 };
 

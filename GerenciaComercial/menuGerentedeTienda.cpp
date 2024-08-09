@@ -8,7 +8,7 @@ void menuGerenteDeTienda(){
     do {
     	system("cls");
         cout << "+--------------------------------+\n";
-        cout << "|		Menu Gerente de Tienda    |\n";
+        cout << "|        Gerente de Tienda       |\n";
         cout << "+--------------------------------+\n";
         cout << "| [1] Comprar Producto           |\n";
         cout << "| [2] Agregar Producto           |\n";
@@ -21,20 +21,20 @@ void menuGerenteDeTienda(){
      
         switch (opcion) {
         case 1:
-            void ComprarProducto();//Comprar Producto
+            comprarProducto();//Comprar Producto
             break;
         case 2:
-            void AgregarProducto();//Agregar Producto
+            agregarProducto();//Agregar Producto
             break;
         case 3:
-            void EliminarProducto();//Eliminar Producto
+            eliminarProducto();//Eliminar Producto
             break;
         case 4:
-            void MostrarInventario();//AÃ±adir Descuentos u ofertas
+            mostrarRegistroDeInventario();//AÃ±adir Descuentos u ofertas
             break;
         case 5: 
-            void ModificarProducto();//Hacer modificaciones al producto
-        case 6:
+            modificarProducto();//Hacer modificaciones al producto
+        case 0:
             cout<<"Saliendo..."<<endl;//Salir
             break;
         default:
