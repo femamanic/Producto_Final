@@ -12,5 +12,16 @@ void contratarPersonal(){
         numeroEmpleados=numeroEmpleados+1;
         cin.ignore( );
         cout<<"Ingrese el Nombre y Apellido: ";getline(cin,empleado[numeroEmpleados].nombre);
+        cout<<"ingrese el codigo: ";cin>>empleado[numeroEmpleados].codigo;
+        cout<<"ingrese la contraseña: ";cin>>empleado[numeroEmpleados].contra;
+        cout<<"ingrese el correo electronico: ";cin>>empleado[numeroEmpleados].correo;
+        do{
+            cout<<"ingrese el telefono movil: ";cin>>empleado[numeroEmpleados].telefono;
+            if(empleado[numeroEmpleados].telefono.length()!=9){
+                cout<<"ERROR: NUMERO INVALIDO"<<endl;
+            }
+        }while(empleado[numeroEmpleados].telefono.length()!=9);
+        cout<<"ingrese la edad: ";cin>>empleado[numeroEmpleados].edad;
+        cout<<"ingrese horas de trabajo: ";cin>>empleado[numeroEmpleados].horasDeTrabajo;
     }
 }
