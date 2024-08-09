@@ -4,25 +4,31 @@
 using namespace std;
 void contratarPersonal(){
     int n;
-    cout << "+---------------------------------+\n";
-    cout << "|        Contratar Personal       |\n";
-    cout << "+---------------------------------+\n";
-    cout<<"Elija cuantas personas desea contratar: ";cin>>n;
+    system("cls");
+    cout << "+----------------------------------------------------------------+\n";
+    cout << "|                     Contratar Personal                         |\n";
+    cout << "+----------------------------------------------------------------+\n";
+    cout << " Elija cuantas personas desea contratar: ";cin>>n;
     for(int i=0;i<n;i++){
-        numeroEmpleados=numeroEmpleados+1;
         cin.ignore( );
-        cout<<"Ingrese el Nombre y Apellido: ";getline(cin,empleado[numeroEmpleados].nombre);
-        cout<<"ingrese el DNI: ";cin>>empleado[numeroEmpleados].DNI;
-        cout<<"ingrese el codigo: ";cin>>empleado[numeroEmpleados].codigo;
-        cout<<"ingrese la contraseña: ";cin>>empleado[numeroEmpleados].contra;
-        cout<<"ingrese el correo electronico: ";cin>>empleado[numeroEmpleados].correo;
+        cout<<" Ingrese el Nombre y Apellido: ";getline(cin,empleado[numeroEmpleados].nombre);
+        cout<<" Ingrese el DNI: ";cin>>empleado[numeroEmpleados].DNI;
+        cout<<" Ingrese el codigo: ";cin>>empleado[numeroEmpleados].codigo;
+        cout<<" Ingrese la contrasenia: ";cin>>empleado[numeroEmpleados].contra;
+        cout<<" Ingrese el correo electronico: ";cin>>empleado[numeroEmpleados].correo;
         do{
-            cout<<"ingrese el telefono movil: ";cin>>empleado[numeroEmpleados].telefono;
+            cout<<" Ingrese el telefono movil: ";cin>>empleado[numeroEmpleados].telefono;
             if(empleado[numeroEmpleados].telefono.length()!=9){
-                cout<<"ERROR: NUMERO INVALIDO"<<endl;
+                cout<<" ERROR: NUMERO INVALIDO"<<endl;
             }
         }while(empleado[numeroEmpleados].telefono.length()!=9);
-        cout<<"ingrese la edad: ";cin>>empleado[numeroEmpleados].edad;
-        cout<<"ingrese horas de trabajo: ";cin>>empleado[numeroEmpleados].horasDeTrabajo;
+        cout<<" Ingrese la edad: ";cin>>empleado[numeroEmpleados].edad;
+        cout<<" Ingrese el salario: ";cin>>empleado[numeroEmpleados].salario;
+        cout<<" Ingrese el cargo: ";cin>>empleado[numeroEmpleados].cargo;
+        cout<<" Ingrese horas de trabajo: ";cin>>empleado[numeroEmpleados].horasDeTrabajo;
+        numeroEmpleados=numeroEmpleados+1;
+        cout << "+----------------------------------------------------------------+\n";
     }
+    cout << " Personal contratado con exito."<<endl;
+    system("pause>nul");
 }
