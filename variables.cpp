@@ -7,7 +7,7 @@ inventario producto[100];
 int numeroProductos = 0;
 
 compra carrito[100];
-int carrito = 0;
+int numerocarrito = 0;
 float totalCarrito = 0;
 
 string diaActual[7] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"};
