@@ -5,26 +5,31 @@
 using namespace std;
 
 void comprarProducto() {
-    cout << "+-----------------------------------+" << endl;
-    cout << "|         Comprar Productos         |" << endl;
-    cout << "+-----------------------------------+" << endl;
+    system ("cls");
+    cout << "+------------------------------------------------------+" << endl;
+    cout << "|                 Comprar Productos                    |" << endl;
+    cout << "+------------------------------------------------------+" << endl;
     string cod;
     int cant;
-    cout << "Ingrese el codigo del producto que desea comprar: ";cin >> cod;
-    cout << "Ingrese la cantidad que desea comprar: ";cin >> cant;
-
+    bool encontrado = false;
+    cout << " Ingrese el codigo del producto que desea comprar: \n ";cin >> cod;
+    cout << " Ingrese la cantidad que desea comprar: \n ";cin >> cant;
+    cout << "+------------------------------------------------------+" << endl;
     for (int i = 0; i < numeroProductos; i++) {
         if (producto[i].codigo == cod) {
-            if (producto[i].cantidad >= cant) {
-                producto[i].cantidad -= cant;
-                cout << "Compra realizada con exito."<<endl;
-                return;
-            } else {
-                cout << "No hay suficiente stock del producto."<<endl;
-                return;
-            }
+            encontrado = true;
+            producto[i].unidadesEnAlmacen = producto[i].unidadesEnAlmacen + cant;
+            cout << " Producto: " << producto[i].nombre << endl;
+            cout << " Cantidad: " << cant << endl;
+            cout << " Costo: " << producto[i].costo << endl;
+            cout << " Total: " << producto[i].costo * cant << endl;   
+            cout << " Unidades en almacen: " << producto[i].unidadesEnAlmacen << endl;
+            cout << "+------------------------------------------------------+" << endl;
+            cout << " Producto adquirido con exito."<<endl;
         }
     }
-
-    cout << "Producto no encontrado."<<endl;
+    if (!encontrado) {
+        cout << " Producto no encontrado."<<endl;
+    }
+    system ("pause>nul");
 }
